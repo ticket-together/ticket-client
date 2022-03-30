@@ -1,0 +1,47 @@
+.reviewBox {
+  background: #f5f5f5;
+  border: solid 1px #ccc;
+  border-radius: 40px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: fit-content;
+  text-align: center;
+  justify-content: center;
+  display: absolute;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.star_rating {
+  /* border: solid 1px #ccc; */
+  display: flex;
+  left: 50%;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0 0.2em;
+  text-align: center;
+  width: 5em;
+  /* margin-left: 50px; */
+  margin-top: 8px;
+}
+
+.star_rating input {
+  display: none;
+}
+
+.star_rating label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star_rating :checked ~ label {
+  color: #fc0;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #fc0;
+}

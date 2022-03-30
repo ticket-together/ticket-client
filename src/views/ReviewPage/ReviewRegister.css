@@ -1,0 +1,17 @@
+.find {
+  text-align: left;
+  /* display: absolute;
+    position: absolute; */
+  /* display: flex; */
+  margin: 20px;
+  font-size: 20px;
+  height: fit-content;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.find select {
+  width: 50%;
+  margin-left: 15%;
+  margin-right: 10px;
+}

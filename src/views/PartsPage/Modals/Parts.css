@@ -1,0 +1,32 @@
+.parts {
+  /* border: 1px solid ; */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10%;
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  height: 190px;
+}
+
+.parts p {
+  font-size: 10px;
+  text-align: left;
+  line-height: 10px;
+}
+
+.parts button {
+  font-size: 17px;
+  position: relative;
+  left: 280px;
+  top: -40px;
+  background-color: gray;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 20%;
+}
+
+#status {
+  font-size: 20px;
+  position: relative;
+  left: 50%;
+}
