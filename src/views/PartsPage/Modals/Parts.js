@@ -1,13 +1,26 @@
-import styles from "./Parts.css";
+import "./Parts.css";
 function Parts() {
   return (
-    <div className={styles.parts}>
-      <h3>🙌같이가자!</h3>
+    <div className="parts">
+      <h2 id="letgo" style={{ marginTop: "5px" }}>
+        🙌 같이가자!
+      </h2>
       <p id="description">간단 설명입니다.</p>
-      <label for="status" className="status">
+      {/* <label for="status">
         모집 현황
-      </label>
-      <select id="status" className="status">
+      </label> */}
+      <select
+        id="status"
+        style={{
+          width: "100px",
+          backgroundColor: "#f5f5f5",
+          color: "black",
+          marginLeft: "10px",
+        }}
+      >
+        <option value="" selected="selected" disabled="disabled">
+          모집현황
+        </option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>

@@ -2,6 +2,7 @@ import Review from "./Review";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./ReviewHome.css";
+import Header from "../Header/Header";
 
 function Home() {
   const floorList = ["", "1", "2", "3"];
@@ -11,27 +12,56 @@ function Home() {
   };
   return (
     <div>
+      <Header />
       <div class="concertHall">
-        <h1>공연장</h1>
+        <p>공연장</p>
       </div>
       <div class="find-seat">
-        <select onChange={handleDrop}>
-          {floorList.map((item) => (
-            <option value={item} key={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-        <label>층 </label>
-        <select onChange={handleDrop}>
-          {floorList.map((item) => (
-            <option value={item} key={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-        <label>구역 </label>
-        <button>검색</button>
+        <ul>
+          <li>
+            <select onChange={handleDrop} style={{ width: "50px" }}>
+              {floorList.map((item) => (
+                <option value={item} key={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+            <label>층 </label>
+          </li>
+          <li>
+            <select onChange={handleDrop} style={{ width: "50px" }}>
+              {floorList.map((item) => (
+                <option value={item} key={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+            <label>구역 </label>
+          </li>
+          <li>
+            <select onChange={handleDrop} style={{ width: "50px" }}>
+              {floorList.map((item) => (
+                <option value={item} key={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+            <label>열 </label>
+          </li>
+          <li>
+            <select onChange={handleDrop} style={{ width: "50px" }}>
+              {floorList.map((item) => (
+                <option value={item} key={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+            <label>번 </label>
+          </li>
+          <li>
+            <button>검색</button>
+          </li>
+        </ul>
       </div>
       <Review />
       <Review />
