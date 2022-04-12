@@ -2,31 +2,38 @@
   /* border: 1px solid ; */
   padding: 10px;
   margin-bottom: 20px;
-  border-radius: 10%;
-  background-color: #f5f5f5;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  background: #f5f5f5;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
   height: 190px;
 }
 
 .parts p {
-  font-size: 10px;
+  font-size: 14px;
   text-align: left;
   line-height: 10px;
 }
 
 .parts button {
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 130px;
   position: relative;
-  left: 280px;
-  top: -40px;
-  background-color: gray;
+  left: 270px;
+  top: -50px;
+  background-color: #999;
   color: aliceblue;
   padding: 10px;
-  border-radius: 20%;
+  border-radius: 20px;
 }
 
 #status {
-  font-size: 20px;
+  font-size: 18px;
   position: relative;
-  left: 50%;
+  top: -60px;
+  left: 280px;
+  border: 0;
+  border-bottom: 2px solid currentcolor;
+  border-radius: 0;
 }

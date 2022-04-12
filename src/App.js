@@ -13,6 +13,7 @@ import PartsHome from "./views/PartsPage/PartsHome";
 import ReviewRegister from "./views/ReviewPage/ReviewRegister";
 import "antd/dist/antd.css";
 import "./App.css";
+import MyPage from "./views/MyPage/MyPage";
 
 function App() {
   const store = createStore(rootReducer);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/review" element={<ReviewHome />} />
           <Route path="/parts" element={<PartsHome />} />
           <Route path="/review/register" element={<ReviewRegister />} />
+          <Route path="/mypage" element={<MyPage />} />
         </Routes>
       </Router>
     </Provider>

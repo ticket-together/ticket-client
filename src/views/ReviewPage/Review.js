@@ -1,11 +1,11 @@
-import styles from "./Review.css";
+import "./Review.css";
 function Review() {
   return (
     <div>
-      <div class={styles.reviewBox}>
-        <p>Nickname | 0층 0구역 0열 0번</p>
-        <p>후기 내용입니다.</p>
-        <div class={styles.star_rating}>
+      <div class="reviewBox">
+        <p id="nickname">Nickname | 0층 0구역 0열 0번</p>
+        <p id="reviewIn">후기 내용입니다.</p>
+        {/* <div class="star_rating">
           <input type="radio" id="5-stars" name="rating" value="5" />
           <label for="5-stars" class="star">
             &#9733;
@@ -26,7 +26,7 @@ function Review() {
           <label for="1-star" class="star">
             &#9733;
           </label>
-        </div>
+        </div> */}
       </div>
     </div>
   );
