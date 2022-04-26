@@ -11,8 +11,8 @@
 # production
 /build
 
-/public
-/.gitignore
+.public
+.gitignore
 
 # misc
 .DS_Store
